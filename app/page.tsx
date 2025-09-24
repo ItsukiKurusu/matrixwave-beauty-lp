@@ -26,7 +26,11 @@ export default function MatrixWavePage() {
               お問い合わせ
             </a>
           </nav>
-          <Button className="bg-amber-500 text-black hover:bg-amber-400">予約する</Button>
+          <Button asChild className="bg-amber-500 text-black hover:bg-amber-400">
+            <a href="https://www.secure-cloud.jp/sf/business/1741055101GfdWoZwC" target="_blank" rel="noopener noreferrer">
+              問い合わせ
+            </a>
+          </Button>
         </div>
       </header>
 
@@ -345,13 +349,12 @@ export default function MatrixWavePage() {
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto text-pretty">
             初回限定で無料個別相談を実施中。 あなたの経営のお悩みを専門スタッフがお聞きします。
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-amber-600 hover:bg-gray-50">
-              <Sparkles className="mr-2 h-5 w-5" />
-              無料体験・個別相談予約
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 bg-transparent">
-              電話で相談する
+          <div className="flex justify-center">
+            <Button asChild size="lg" className="bg-white text-amber-600 hover:bg-gray-50">
+              <a href="https://www.secure-cloud.jp/sf/business/1741055101GfdWoZwC" target="_blank" rel="noopener noreferrer">
+                <Sparkles className="mr-2 h-5 w-5" />
+                無料体験・個別相談予約
+              </a>
             </Button>
           </div>
         </div>
