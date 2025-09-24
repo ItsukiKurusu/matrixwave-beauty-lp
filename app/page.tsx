@@ -262,7 +262,7 @@ export default function MatrixWavePage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 text-balance">お客様の声</h2>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto text-pretty">
-              実際にMATRIXWAVEを体験されたお客様からの喜びの声をご紹介します
+              実際にMATRIXWAVEを導入されたお客様からの喜びの声をご紹介します
             </p>
           </div>
 
@@ -275,7 +275,7 @@ export default function MatrixWavePage() {
                   ))}
                 </div>
                 <p className="text-gray-300 mb-4 text-sm">
-                  「1回の施術で顔のリフトアップを実感できました。痛みもなく、とても快適な時間でした。」
+                  「1回の施術単価が30,000円を超えました。キャンペーンで新規顧客が増えています。」
                 </p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 bg-gradient-to-br from-yellow-100 to-amber-100 rounded-full flex items-center justify-center mr-3">
@@ -283,7 +283,7 @@ export default function MatrixWavePage() {
                   </div>
                   <div>
                     <p className="font-semibold text-white text-sm">30代女性</p>
-                    <p className="text-gray-400 text-xs">会社員</p>
+                    <p className="text-gray-400 text-xs">エステサロン経営（テナント）</p>
                   </div>
                 </div>
               </CardContent>
@@ -297,7 +297,7 @@ export default function MatrixWavePage() {
                   ))}
                 </div>
                 <p className="text-gray-300 mb-4 text-sm">
-                  「肌のハリが戻り、化粧のりも良くなりました。定期的に通いたいと思います。」
+                  「肌のハリが蘇り、化粧ノリも良くなったという声が非常に多いです。患者様のリピート率が約1.5倍になりました。」
                 </p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 bg-gradient-to-br from-orange-100 to-yellow-100 rounded-full flex items-center justify-center mr-3">
@@ -305,7 +305,7 @@ export default function MatrixWavePage() {
                   </div>
                   <div>
                     <p className="font-semibold text-white text-sm">40代女性</p>
-                    <p className="text-gray-400 text-xs">主婦</p>
+                    <p className="text-gray-400 text-xs">エステサロン経営（自宅マンション）</p>
                   </div>
                 </div>
               </CardContent>
@@ -319,15 +319,15 @@ export default function MatrixWavePage() {
                   ))}
                 </div>
                 <p className="text-gray-300 mb-4 text-sm">
-                  「スタッフの方が丁寧で、安心して施術を受けることができました。効果も抜群です。」
+                  「導入後のサポートが丁寧で、メニュー化以外にも、集客や採用・教育などなんでも相談に乗ってくれます。」
                 </p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 bg-gradient-to-br from-amber-100 to-yellow-100 rounded-full flex items-center justify-center mr-3">
                     <span className="text-amber-600 font-semibold text-sm">Y.K</span>
                   </div>
                   <div>
-                    <p className="font-semibold text-white text-sm">50代女性</p>
-                    <p className="text-gray-400 text-xs">自営業</p>
+                    <p className="font-semibold text-white text-sm">50代男性</p>
+                    <p className="text-gray-400 text-xs">複数店舗エステサロンオーナー</p>
                   </div>
                 </div>
               </CardContent>
@@ -343,12 +343,12 @@ export default function MatrixWavePage() {
             今すぐMATRIXWAVEを体験してみませんか？
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto text-pretty">
-            初回限定で無料カウンセリングを実施中。 あなたの美容の悩みを専門スタッフがお聞きします。
+            初回限定で無料個別相談を実施中。 あなたの経営のお悩みを専門スタッフがお聞きします。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-white text-amber-600 hover:bg-gray-50">
               <Sparkles className="mr-2 h-5 w-5" />
-              無料カウンセリング予約
+              無料体験・個別相談予約
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 bg-transparent">
               電話で相談する
@@ -379,26 +379,26 @@ export default function MatrixWavePage() {
             </div>
 
             <div>
-              <h3 className="font-semibold text-white mb-4">サロン情報</h3>
+              <h3 className="font-semibold text-white mb-4">運営会社情報</h3>
               <ul className="space-y-2 text-sm text-gray-300">
-                <li>営業時間: 10:00-20:00</li>
-                <li>定休日: 月曜日</li>
-                <li>完全予約制</li>
+                <li>株式会社OMGコーポレーション</li>
+                <li>営業時間: 9:00-18:00</li>
+                <li>定休日: 日曜日・祝日</li>
               </ul>
             </div>
 
             <div>
               <h3 className="font-semibold text-white mb-4">お問い合わせ</h3>
               <ul className="space-y-2 text-sm text-gray-300">
-                <li>TEL: 03-1234-5678</li>
-                <li>Email: info@matrixwave.jp</li>
-                <li>〒100-0001 東京都千代田区</li>
+                <li>TEL: 03-6264-5188</li>
+                <li>Email: onenest1201@gmail.com</li>
+                <li>〒105-0004 東京都港区新橋4丁目27-1 セントラルビル7階</li>
               </ul>
             </div>
           </div>
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-            <p className="text-gray-400 text-sm">© 2024 MATRIXWAVE. All rights reserved.</p>
+            <p className="text-gray-400 text-sm">© 2025 OMG Corporation. All rights reserved.</p>
           </div>
         </div>
       </footer>
