@@ -52,11 +52,11 @@ export default function MatrixWavePage() {
           </div>
           
           <div className="max-w-5xl mx-auto">
-            <div className="aspect-[16/10] bg-gradient-to-br from-yellow-100/10 to-amber-100/10 rounded-2xl overflow-hidden">
+            <div className="aspect-[16/10] bg-gradient-to-br from-yellow-100/10 to-amber-100/10 rounded-2xl overflow-hidden p-4">
               <img
                 src="/matrix-ion-effect.jpg"
                 alt="MATRIXWAVEのイオン効果 - マイナスイオンによる全身の膜改善と内臓機能向上"
-                className="w-full h-full object-cover rounded-2xl shadow-2xl"
+                className="w-full h-full object-contain rounded-xl"
               />
             </div>
           </div>
