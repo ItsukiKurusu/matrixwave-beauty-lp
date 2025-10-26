@@ -41,6 +41,28 @@ export default function MatrixWavePage() {
         </video>
       </section>
 
+      {/* What is MATRIXWAVE Section */}
+      <section className="py-20 bg-black">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 text-balance">MATRIXWAVEとは何か？</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-12 text-pretty">
+              最大の特徴は、直流電気ならではのイオン効果にあります。
+            </p>
+          </div>
+          
+          <div className="max-w-5xl mx-auto">
+            <div className="aspect-[16/10] bg-gradient-to-br from-yellow-100/10 to-amber-100/10 rounded-2xl overflow-hidden">
+              <img
+                src="/matrix-ion-effect.jpg"
+                alt="MATRIXWAVEのイオン効果 - マイナスイオンによる全身の膜改善と内臓機能向上"
+                className="w-full h-full object-cover rounded-2xl shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="services" className="py-20 bg-black">
         <div className="container mx-auto px-4">
