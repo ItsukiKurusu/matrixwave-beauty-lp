@@ -37,7 +37,7 @@ export default function MatrixWavePage() {
       {/* Hero Section */}
       <section className="relative h-screen overflow-hidden">
         <video autoPlay muted loop playsInline className="w-full h-full object-contain bg-black">
-          <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/MATRIX-hero-qWr4HQhfSmE3sLrwFiH5IbrKeGAysx.mp4" type="video/mp4" />
+          <source src="/MATRIX.mp4" type="video/mp4" />
         </video>
       </section>
 
