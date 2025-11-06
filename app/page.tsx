@@ -382,6 +382,53 @@ export default function MatrixWavePage() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-20 bg-gray-900">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 text-balance">よくある質問</h2>
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto text-pretty">
+              MATRIXWAVEについてよくお寄せいただく質問にお答えします
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-6">
+            <div className="bg-black border border-gray-800 rounded-xl p-6">
+              <h3 className="text-xl font-semibold text-white mb-3 flex items-start">
+                <span className="text-amber-500 mr-3 text-2xl font-bold">Q.</span>
+                やけどや痛みはありますか？
+              </h3>
+              <p className="text-gray-300 ml-8 text-lg">
+                <span className="text-amber-500 mr-3 text-xl font-bold">A.</span>
+                発売から10年以上、事故・やけどゼロ。
+              </p>
+            </div>
+
+            <div className="bg-black border border-gray-800 rounded-xl p-6">
+              <h3 className="text-xl font-semibold text-white mb-3 flex items-start">
+                <span className="text-amber-500 mr-3 text-2xl font-bold">Q.</span>
+                効果はどのくらいで出ますか？
+              </h3>
+              <p className="text-gray-300 ml-8 text-lg">
+                <span className="text-amber-500 mr-3 text-xl font-bold">A.</span>
+                初回から体感あり。平均2〜3回で見た目変化。
+              </p>
+            </div>
+
+            <div className="bg-black border border-gray-800 rounded-xl p-6">
+              <h3 className="text-xl font-semibold text-white mb-3 flex items-start">
+                <span className="text-amber-500 mr-3 text-2xl font-bold">Q.</span>
+                導入サポートは？
+              </h3>
+              <p className="text-gray-300 ml-8 text-lg">
+                <span className="text-amber-500 mr-3 text-xl font-bold">A.</span>
+                専用研修＋販促POP＋動画マニュアルを完備。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer id="contact" className="bg-black border-t border-gray-800">
         <div className="container mx-auto px-4 py-12">
