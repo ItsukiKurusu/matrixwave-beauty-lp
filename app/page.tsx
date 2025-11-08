@@ -22,6 +22,24 @@ export default function MatrixWavePage() {
 
   return (
     <div className="min-h-screen bg-black">
+      {/* Modal for enlarged images */}
+      {modalSrc && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+          onClick={closeModal}
+        >
+          <div className="relative w-full h-full md:w-3/4 md:h-3/4" onClick={(e) => e.stopPropagation()}>
+            <Image src={modalSrc} alt={modalAlt} fill className="object-contain" />
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 bg-white/10 hover:bg-white/20 text-white rounded-full p-2"
+              aria-label="閉じる"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
       {/* Header */}
       <header className="border-b border-gray-800 bg-black/95 backdrop-blur supports-[backdrop-filter]:bg-black/60 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -332,66 +350,66 @@ export default function MatrixWavePage() {
             {/* Profit cases stacked vertically, each full viewport height */}
             <div className="space-y-8">
               <section className="min-h-screen relative rounded-2xl overflow-hidden bg-black flex flex-col">
-                <div className="h-[85vh] relative">
+                <div className="h-[60vh] md:h-[85vh] relative">
                   <Image
                     src="/Profit1.png"
                     alt="成功事例①（1人治療院）"
                     fill
                     priority
                     sizes="100vw"
-                    className="object-cover cursor-pointer"
+                    className="object-contain md:object-cover cursor-pointer"
                     onClick={() => openModal('/Profit1.png', '成功事例①（1人治療院）')}
                   />
                 </div>
-                <div className="h-[15vh] flex items-center justify-center bg-gradient-to-t from-black/80 to-transparent">
+                <div className="h-[20vh] md:h-[15vh] flex items-center justify-center bg-gradient-to-t from-black/80 to-transparent">
                   <h3 className="text-white text-xl font-semibold">成功事例①（1人治療院）</h3>
                 </div>
               </section>
 
               <section className="min-h-screen relative rounded-2xl overflow-hidden bg-black flex flex-col">
-                <div className="h-[85vh] relative">
+                <div className="h-[60vh] md:h-[85vh] relative">
                   <Image
                     src="/Profit2.png"
                     alt="成功事例②（1人治療院）"
                     fill
                     sizes="100vw"
-                    className="object-cover cursor-pointer"
+                    className="object-contain md:object-cover cursor-pointer"
                     onClick={() => openModal('/Profit2.png', '成功事例②（1人治療院）')}
                   />
                 </div>
-                <div className="h-[15vh] flex items-center justify-center bg-gradient-to-t from-black/80 to-transparent">
+                <div className="h-[20vh] md:h-[15vh] flex items-center justify-center bg-gradient-to-t from-black/80 to-transparent">
                   <h3 className="text-white text-xl font-semibold">成功事例②（1人治療院）</h3>
                 </div>
               </section>
 
               <section className="min-h-screen relative rounded-2xl overflow-hidden bg-black flex flex-col">
-                <div className="h-[85vh] relative">
+                <div className="h-[60vh] md:h-[85vh] relative">
                   <Image
                     src="/Profit3.png"
                     alt="成功事例③（施術者4名）"
                     fill
                     sizes="100vw"
-                    className="object-cover cursor-pointer"
+                    className="object-contain md:object-cover cursor-pointer"
                     onClick={() => openModal('/Profit3.png', '成功事例③（施術者4名）')}
                   />
                 </div>
-                <div className="h-[15vh] flex items-center justify-center bg-gradient-to-t from-black/80 to-transparent">
+                <div className="h-[20vh] md:h-[15vh] flex items-center justify-center bg-gradient-to-t from-black/80 to-transparent">
                   <h3 className="text-white text-xl font-semibold">成功事例③（施術者4名）</h3>
                 </div>
               </section>
 
               <section className="min-h-screen relative rounded-2xl overflow-hidden bg-black flex flex-col">
-                <div className="h-[85vh] relative">
+                <div className="h-[60vh] md:h-[85vh] relative">
                   <Image
                     src="/Profit4.png"
                     alt="成功事例④（施術者4名）"
                     fill
                     sizes="100vw"
-                    className="object-cover cursor-pointer"
+                    className="object-contain md:object-cover cursor-pointer"
                     onClick={() => openModal('/Profit4.png', '成功事例④（施術者4名）')}
                   />
                 </div>
-                <div className="h-[15vh] flex items-center justify-center bg-gradient-to-t from-black/80 to-transparent">
+                <div className="h-[20vh] md:h-[15vh] flex items-center justify-center bg-gradient-to-t from-black/80 to-transparent">
                   <h3 className="text-white text-xl font-semibold">成功事例④（施術者4名）</h3>
                 </div>
               </section>
