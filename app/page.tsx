@@ -77,9 +77,9 @@ export default function MatrixWavePage() {
       </section>
 
   {/* What is MATRIXWAVE Section */}
-  <section className="py-8 md:py-16 bg-black">
+  <section className="py-6 md:py-12 bg-black">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-6 md:mb-14">
+          <div className="text-center mb-4 md:mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 text-balance">MATRIXWAVEとは何か？</h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-12 text-pretty">
               最大の特徴は、直流電気ならではのイオン効果にあります。
@@ -99,16 +99,16 @@ export default function MatrixWavePage() {
       </section>
 
   {/* Services Section */}
-  <section id="services" className="py-8 md:py-16 bg-black">
+  <section id="services" className="py-6 md:py-12 bg-black">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-6 md:mb-14">
+          <div className="text-center mb-4 md:mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 text-balance">MATRIXWAVEトリートメント</h2>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto text-pretty">
               直流電気の力で肌細胞を活性化し、自然な美しさを引き出します
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5">
             <Card className="bg-gradient-to-br from-yellow-400 to-pink-400 border-none hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-4">
@@ -170,9 +170,9 @@ export default function MatrixWavePage() {
       </section>
 
   {/* Features Section */}
-  <section id="about" className="py-8 md:py-16 bg-black">
+  <section id="about" className="py-6 md:py-12 bg-black">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-6 md:gap-10 items-center mb-8 md:mb-16">
+          <div className="grid lg:grid-cols-2 gap-5 md:gap-8 items-center mb-6 md:mb-14">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 text-balance">MATRIX WAVE テクノロジー</h2>
               <p className="text-lg text-gray-300 mb-6 text-pretty">
@@ -219,15 +219,15 @@ export default function MatrixWavePage() {
             </div>
           </div>
 
-          <div className="mb-12 md:mb-20">
-            <div className="text-center mb-8 md:mb-12">
+          <div className="mb-8 md:mb-16">
+            <div className="text-center mb-6 md:mb-10">
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 text-balance">施術風景</h2>
               <p className="text-lg text-gray-300 max-w-2xl mx-auto text-pretty">
                 リラックスできる空間で、専門技術者による丁寧な施術をお受けいただけます
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-4 md:gap-6">
+            <div className="grid md:grid-cols-2 gap-3 md:gap-5">
               <div className="relative group">
                 <div className="aspect-[4/3] bg-gradient-to-br from-yellow-100/5 to-amber-100/5 rounded-2xl overflow-hidden">
                   <img
@@ -260,7 +260,7 @@ export default function MatrixWavePage() {
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-6 md:gap-10 items-center">
+          <div className="grid lg:grid-cols-2 gap-5 md:gap-8 items-center">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 text-balance">
                 なぜMATRIXWAVEが選ばれるのか
@@ -350,7 +350,7 @@ export default function MatrixWavePage() {
             {/* Profit cases stacked vertically, each full viewport height */}
             <div className="space-y-8">
               <section className="min-h-screen relative rounded-2xl overflow-hidden bg-black flex flex-col">
-                <div className="h-[50vh] md:h-[75vh] relative">
+                <div className="h-[45vh] md:h-[65vh] relative">
                   <Image
                     src="/Profit1.png"
                     alt="成功事例①（1人治療院）"
@@ -361,13 +361,13 @@ export default function MatrixWavePage() {
                     onClick={() => openModal('/Profit1.png', '成功事例①（1人治療院）')}
                   />
                 </div>
-                <div className="h-[12vh] md:h-[15vh] flex items-center justify-center bg-gradient-to-t from-black/80 to-transparent">
+                <div className="h-[10vh] md:h-[13vh] flex items-center justify-center bg-gradient-to-t from-black/80 to-transparent">
                   <h3 className="text-white text-xl font-semibold">成功事例①（1人治療院）</h3>
                 </div>
               </section>
 
               <section className="min-h-screen relative rounded-2xl overflow-hidden bg-black flex flex-col">
-                <div className="h-[50vh] md:h-[75vh] relative">
+                <div className="h-[45vh] md:h-[65vh] relative">
                   <Image
                     src="/Profit2.png"
                     alt="成功事例②（1人治療院）"
@@ -377,13 +377,13 @@ export default function MatrixWavePage() {
                     onClick={() => openModal('/Profit2.png', '成功事例②（1人治療院）')}
                   />
                 </div>
-                <div className="h-[12vh] md:h-[15vh] flex items-center justify-center bg-gradient-to-t from-black/80 to-transparent">
+                <div className="h-[10vh] md:h-[13vh] flex items-center justify-center bg-gradient-to-t from-black/80 to-transparent">
                   <h3 className="text-white text-xl font-semibold">成功事例②（1人治療院）</h3>
                 </div>
               </section>
 
               <section className="min-h-screen relative rounded-2xl overflow-hidden bg-black flex flex-col">
-                <div className="h-[50vh] md:h-[75vh] relative">
+                <div className="h-[45vh] md:h-[65vh] relative">
                   <Image
                     src="/Profit3.png"
                     alt="成功事例③（施術者4名）"
@@ -393,13 +393,13 @@ export default function MatrixWavePage() {
                     onClick={() => openModal('/Profit3.png', '成功事例③（施術者4名）')}
                   />
                 </div>
-                <div className="h-[12vh] md:h-[15vh] flex items-center justify-center bg-gradient-to-t from-black/80 to-transparent">
+                <div className="h-[10vh] md:h-[13vh] flex items-center justify-center bg-gradient-to-t from-black/80 to-transparent">
                   <h3 className="text-white text-xl font-semibold">成功事例③（施術者4名）</h3>
                 </div>
               </section>
 
               <section className="min-h-screen relative rounded-2xl overflow-hidden bg-black flex flex-col">
-                <div className="h-[50vh] md:h-[75vh] relative">
+                <div className="h-[45vh] md:h-[65vh] relative">
                   <Image
                     src="/Profit4.png"
                     alt="成功事例④（施術者4名）"
@@ -409,7 +409,7 @@ export default function MatrixWavePage() {
                     onClick={() => openModal('/Profit4.png', '成功事例④（施術者4名）')}
                   />
                 </div>
-                <div className="h-[12vh] md:h-[15vh] flex items-center justify-center bg-gradient-to-t from-black/80 to-transparent">
+                <div className="h-[10vh] md:h-[13vh] flex items-center justify-center bg-gradient-to-t from-black/80 to-transparent">
                   <h3 className="text-white text-xl font-semibold">成功事例④（施術者4名）</h3>
                 </div>
               </section>
@@ -421,13 +421,13 @@ export default function MatrixWavePage() {
   <section id="testimonials" className="py-8 md:py-16 bg-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 text-balance">お客様の声</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 text-balance">お客様の声</h2>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto text-pretty">
               実際にMATRIXWAVEを導入されたお客様からの喜びの声をご紹介します
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5">
             <Card className="bg-gray-900 border-gray-800">
               <CardContent className="pt-6">
                   <div className="flex items-center mb-4">
@@ -498,12 +498,12 @@ export default function MatrixWavePage() {
       </section>
 
   {/* CTA Section */}
-  <section className="py-8 md:py-16 bg-gradient-to-r from-yellow-500 via-amber-500 to-orange-500">
+  <section className="py-6 md:py-12 bg-gradient-to-r from-yellow-500 via-amber-500 to-orange-500">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 md:mb-6 text-balance">
+          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-3 md:mb-6 text-balance">
             今すぐMATRIXWAVEを体験してみませんか？
           </h2>
-          <p className="text-xl text-white/90 mb-6 md:mb-8 max-w-2xl mx-auto text-pretty">
+          <p className="text-xl text-white/90 mb-4 md:mb-8 max-w-2xl mx-auto text-pretty">
             初回限定で無料個別相談を実施中。 あなたの経営のお悩みを専門スタッフがお聞きします。
           </p>
           <div className="flex justify-center">
@@ -518,7 +518,7 @@ export default function MatrixWavePage() {
       </section>
 
   {/* FAQ Section */}
-  <section className="py-8 md:py-16 bg-gray-900">
+  <section className="py-6 md:py-12 bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-6 md:mb-14">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 text-balance">よくある質問</h2>
