@@ -76,10 +76,10 @@ export default function MatrixWavePage() {
         </video>
       </section>
 
-      {/* What is MATRIXWAVE Section */}
-      <section className="py-20 bg-black">
+  {/* What is MATRIXWAVE Section */}
+  <section className="py-12 md:py-20 bg-black">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 md:mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 text-balance">MATRIXWAVEとは何か？</h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-12 text-pretty">
               最大の特徴は、直流電気ならではのイオン効果にあります。
@@ -98,17 +98,17 @@ export default function MatrixWavePage() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="py-20 bg-black">
+  {/* Services Section */}
+  <section id="services" className="py-12 md:py-20 bg-black">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 md:mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 text-balance">MATRIXWAVEトリートメント</h2>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto text-pretty">
               直流電気の力で肌細胞を活性化し、自然な美しさを引き出します
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <Card className="bg-gradient-to-br from-yellow-400 to-pink-400 border-none hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-4">
@@ -169,10 +169,10 @@ export default function MatrixWavePage() {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section id="about" className="py-20 bg-black">
+  {/* Features Section */}
+  <section id="about" className="py-12 md:py-20 bg-black">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center mb-12 md:mb-20">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 text-balance">MATRIX WAVE テクノロジー</h2>
               <p className="text-lg text-gray-300 mb-6 text-pretty">
@@ -219,15 +219,15 @@ export default function MatrixWavePage() {
             </div>
           </div>
 
-          <div className="mb-20">
-            <div className="text-center mb-12">
+          <div className="mb-12 md:mb-20">
+            <div className="text-center mb-8 md:mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 text-balance">施術風景</h2>
               <p className="text-lg text-gray-300 max-w-2xl mx-auto text-pretty">
                 リラックスできる空間で、専門技術者による丁寧な施術をお受けいただけます
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8">
               <div className="relative group">
                 <div className="aspect-[4/3] bg-gradient-to-br from-yellow-100/5 to-amber-100/5 rounded-2xl overflow-hidden">
                   <img
@@ -260,7 +260,7 @@ export default function MatrixWavePage() {
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 text-balance">
                 なぜMATRIXWAVEが選ばれるのか
@@ -418,19 +418,19 @@ export default function MatrixWavePage() {
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="py-20 bg-black">
+    <section id="testimonials" className="py-12 md:py-20 bg-black">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 text-balance">お客様の声</h2>
+              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 text-balance">お客様の声</h2>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto text-pretty">
               実際にMATRIXWAVEを導入されたお客様からの喜びの声をご紹介します
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <Card className="bg-gray-900 border-gray-800">
               <CardContent className="pt-6">
-                <div className="flex items-center mb-4">
+                  <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="h-4 w-4 fill-amber-400 text-amber-400" />
                   ))}
@@ -497,13 +497,13 @@ export default function MatrixWavePage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-yellow-500 via-amber-500 to-orange-500">
+  {/* CTA Section */}
+  <section className="py-12 md:py-20 bg-gradient-to-r from-yellow-500 via-amber-500 to-orange-500">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 text-balance">
+          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 md:mb-6 text-balance">
             今すぐMATRIXWAVEを体験してみませんか？
           </h2>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto text-pretty">
+          <p className="text-xl text-white/90 mb-6 md:mb-8 max-w-2xl mx-auto text-pretty">
             初回限定で無料個別相談を実施中。 あなたの経営のお悩みを専門スタッフがお聞きします。
           </p>
           <div className="flex justify-center">
@@ -517,10 +517,10 @@ export default function MatrixWavePage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-20 bg-gray-900">
+  {/* FAQ Section */}
+  <section className="py-12 md:py-20 bg-gray-900">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 md:mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 text-balance">よくある質問</h2>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto text-pretty">
               MATRIXWAVEについてよくお寄せいただく質問にお答えします
