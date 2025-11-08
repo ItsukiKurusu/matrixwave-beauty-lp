@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Zap, Sparkles, Star, Clock, Shield, Award } from "lucide-react"
+import Image from "next/image"
 
 export default function MatrixWavePage() {
   return (
@@ -277,6 +278,61 @@ export default function MatrixWavePage() {
                   className="w-full h-full object-contain rounded-2xl shadow-2xl"
                 />
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Compare and Profit Sections */}
+      <section className="py-20 bg-black">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 text-balance">他の機器と何が違うのか？</h2>
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto text-pretty">MATRIXWAVEと他の機器との違いを一目でご確認ください。</p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="relative aspect-[16/9] bg-gradient-to-br from-yellow-100/5 to-amber-100/5 rounded-2xl overflow-hidden p-6">
+              <Image src="/Compare.png" alt="他の機器と何が違うのか？ 比較表" fill className="object-contain rounded-lg" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-black">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 text-balance">費用対効果の事例</h2>
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto text-pretty">導入による実際の費用対効果（成功事例）をご紹介します。</p>
+          </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-black/20 rounded-2xl p-4 flex flex-col items-center">
+              <div className="w-full aspect-[4/3] overflow-hidden rounded-lg mb-3 relative">
+                <Image src="/Profit1.png" alt="成功事例①（1人治療院）" fill className="object-contain" />
+              </div>
+              <h3 className="text-white font-semibold">成功事例①（1人治療院）</h3>
+            </div>
+
+            <div className="bg-black/20 rounded-2xl p-4 flex flex-col items-center">
+              <div className="w-full aspect-[4/3] overflow-hidden rounded-lg mb-3 relative">
+                <Image src="/Profit2.png" alt="成功事例②（1人治療院）" fill className="object-contain" />
+              </div>
+              <h3 className="text-white font-semibold">成功事例②（1人治療院）</h3>
+            </div>
+
+            <div className="bg-black/20 rounded-2xl p-4 flex flex-col items-center">
+              <div className="w-full aspect-[4/3] overflow-hidden rounded-lg mb-3 relative">
+                <Image src="/Profit3.png" alt="成功事例③（施術者4名）" fill className="object-contain" />
+              </div>
+              <h3 className="text-white font-semibold">成功事例③（施術者4名）</h3>
+            </div>
+
+            <div className="bg-black/20 rounded-2xl p-4 flex flex-col items-center">
+              <div className="w-full aspect-[4/3] overflow-hidden rounded-lg mb-3 relative">
+                <Image src="/Profit4.png" alt="成功事例④（施術者4名）" fill className="object-contain" />
+              </div>
+              <h3 className="text-white font-semibold">成功事例④（施術者4名）</h3>
             </div>
           </div>
         </div>
