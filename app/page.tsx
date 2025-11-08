@@ -1,9 +1,25 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Zap, Sparkles, Star, Clock, Shield, Award } from "lucide-react"
 import Image from "next/image"
+import { useState } from "react"
 
 export default function MatrixWavePage() {
+  const [modalSrc, setModalSrc] = useState<string | null>(null)
+  const [modalAlt, setModalAlt] = useState<string>("")
+
+  const openModal = (src: string, alt = "") => {
+    setModalSrc(src)
+    setModalAlt(alt)
+  }
+
+  const closeModal = () => {
+    setModalSrc(null)
+    setModalAlt("")
+  }
+
   return (
     <div className="min-h-screen bg-black">
       {/* Header */}
@@ -293,7 +309,14 @@ export default function MatrixWavePage() {
 
           <div className="max-w-4xl mx-auto">
             <div className="relative aspect-[16/9] bg-gradient-to-br from-yellow-100/5 to-amber-100/5 rounded-2xl overflow-hidden p-6">
-              <Image src="/Compare.png" alt="他の機器と何が違うのか？ 比較表" fill className="object-contain rounded-lg" />
+              <Image
+                src="/Compare.png"
+                alt="他の機器と何が違うのか？ 比較表"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 1024px"
+                className="object-contain rounded-lg"
+              />
             </div>
           </div>
         </div>
@@ -306,35 +329,73 @@ export default function MatrixWavePage() {
             <p className="text-lg text-gray-300 max-w-2xl mx-auto text-pretty">導入による実際の費用対効果（成功事例）をご紹介します。</p>
           </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-black/20 rounded-2xl p-4 flex flex-col items-center">
-              <div className="w-full aspect-[4/3] overflow-hidden rounded-lg mb-3 relative">
-                <Image src="/Profit1.png" alt="成功事例①（1人治療院）" fill className="object-contain" />
-              </div>
-              <h3 className="text-white font-semibold">成功事例①（1人治療院）</h3>
-            </div>
+            {/* Profit cases stacked vertically, each full viewport height */}
+            <div className="space-y-8">
+              <section className="min-h-screen relative rounded-2xl overflow-hidden bg-black">
+                <div className="absolute inset-0">
+                  <Image
+                    src="/Profit1.png"
+                    alt="成功事例①（1人治療院）"
+                    fill
+                    priority
+                    sizes="100vw"
+                    className="object-contain"
+                    onClick={() => openModal('/Profit1.png', '成功事例①（1人治療院）')}
+                  />
+                </div>
+                <div className="absolute bottom-8 left-0 right-0 text-center">
+                  <h3 className="text-white text-xl font-semibold">成功事例①（1人治療院）</h3>
+                </div>
+              </section>
 
-            <div className="bg-black/20 rounded-2xl p-4 flex flex-col items-center">
-              <div className="w-full aspect-[4/3] overflow-hidden rounded-lg mb-3 relative">
-                <Image src="/Profit2.png" alt="成功事例②（1人治療院）" fill className="object-contain" />
-              </div>
-              <h3 className="text-white font-semibold">成功事例②（1人治療院）</h3>
-            </div>
+              <section className="min-h-screen relative rounded-2xl overflow-hidden bg-black">
+                <div className="absolute inset-0">
+                  <Image
+                    src="/Profit2.png"
+                    alt="成功事例②（1人治療院）"
+                    fill
+                    sizes="100vw"
+                    className="object-contain cursor-pointer"
+                    onClick={() => openModal('/Profit2.png', '成功事例②（1人治療院）')}
+                  />
+                </div>
+                <div className="absolute bottom-8 left-0 right-0 text-center">
+                  <h3 className="text-white text-xl font-semibold">成功事例②（1人治療院）</h3>
+                </div>
+              </section>
 
-            <div className="bg-black/20 rounded-2xl p-4 flex flex-col items-center">
-              <div className="w-full aspect-[4/3] overflow-hidden rounded-lg mb-3 relative">
-                <Image src="/Profit3.png" alt="成功事例③（施術者4名）" fill className="object-contain" />
-              </div>
-              <h3 className="text-white font-semibold">成功事例③（施術者4名）</h3>
-            </div>
+              <section className="min-h-screen relative rounded-2xl overflow-hidden bg-black">
+                <div className="absolute inset-0">
+                  <Image
+                    src="/Profit3.png"
+                    alt="成功事例③（施術者4名）"
+                    fill
+                    sizes="100vw"
+                    className="object-contain cursor-pointer"
+                    onClick={() => openModal('/Profit3.png', '成功事例③（施術者4名）')}
+                  />
+                </div>
+                <div className="absolute bottom-8 left-0 right-0 text-center">
+                  <h3 className="text-white text-xl font-semibold">成功事例③（施術者4名）</h3>
+                </div>
+              </section>
 
-            <div className="bg-black/20 rounded-2xl p-4 flex flex-col items-center">
-              <div className="w-full aspect-[4/3] overflow-hidden rounded-lg mb-3 relative">
-                <Image src="/Profit4.png" alt="成功事例④（施術者4名）" fill className="object-contain" />
-              </div>
-              <h3 className="text-white font-semibold">成功事例④（施術者4名）</h3>
+              <section className="min-h-screen relative rounded-2xl overflow-hidden bg-black">
+                <div className="absolute inset-0">
+                  <Image
+                    src="/Profit4.png"
+                    alt="成功事例④（施術者4名）"
+                    fill
+                    sizes="100vw"
+                    className="object-contain cursor-pointer"
+                    onClick={() => openModal('/Profit4.png', '成功事例④（施術者4名）')}
+                  />
+                </div>
+                <div className="absolute bottom-8 left-0 right-0 text-center">
+                  <h3 className="text-white text-xl font-semibold">成功事例④（施術者4名）</h3>
+                </div>
+              </section>
             </div>
-          </div>
         </div>
       </section>
 
