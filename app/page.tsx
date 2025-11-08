@@ -331,67 +331,67 @@ export default function MatrixWavePage() {
 
             {/* Profit cases stacked vertically, each full viewport height */}
             <div className="space-y-8">
-              <section className="min-h-screen relative rounded-2xl overflow-hidden bg-black">
-                <div className="absolute inset-0">
+              <section className="min-h-screen relative rounded-2xl overflow-hidden bg-black flex flex-col">
+                <div className="h-[85vh] relative">
                   <Image
                     src="/Profit1.png"
                     alt="成功事例①（1人治療院）"
                     fill
                     priority
                     sizes="100vw"
-                    className="object-contain"
+                    className="object-cover cursor-pointer"
                     onClick={() => openModal('/Profit1.png', '成功事例①（1人治療院）')}
                   />
                 </div>
-                <div className="absolute bottom-8 left-0 right-0 text-center">
+                <div className="h-[15vh] flex items-center justify-center bg-gradient-to-t from-black/80 to-transparent">
                   <h3 className="text-white text-xl font-semibold">成功事例①（1人治療院）</h3>
                 </div>
               </section>
 
-              <section className="min-h-screen relative rounded-2xl overflow-hidden bg-black">
-                <div className="absolute inset-0">
+              <section className="min-h-screen relative rounded-2xl overflow-hidden bg-black flex flex-col">
+                <div className="h-[85vh] relative">
                   <Image
                     src="/Profit2.png"
                     alt="成功事例②（1人治療院）"
                     fill
                     sizes="100vw"
-                    className="object-contain cursor-pointer"
+                    className="object-cover cursor-pointer"
                     onClick={() => openModal('/Profit2.png', '成功事例②（1人治療院）')}
                   />
                 </div>
-                <div className="absolute bottom-8 left-0 right-0 text-center">
+                <div className="h-[15vh] flex items-center justify-center bg-gradient-to-t from-black/80 to-transparent">
                   <h3 className="text-white text-xl font-semibold">成功事例②（1人治療院）</h3>
                 </div>
               </section>
 
-              <section className="min-h-screen relative rounded-2xl overflow-hidden bg-black">
-                <div className="absolute inset-0">
+              <section className="min-h-screen relative rounded-2xl overflow-hidden bg-black flex flex-col">
+                <div className="h-[85vh] relative">
                   <Image
                     src="/Profit3.png"
                     alt="成功事例③（施術者4名）"
                     fill
                     sizes="100vw"
-                    className="object-contain cursor-pointer"
+                    className="object-cover cursor-pointer"
                     onClick={() => openModal('/Profit3.png', '成功事例③（施術者4名）')}
                   />
                 </div>
-                <div className="absolute bottom-8 left-0 right-0 text-center">
+                <div className="h-[15vh] flex items-center justify-center bg-gradient-to-t from-black/80 to-transparent">
                   <h3 className="text-white text-xl font-semibold">成功事例③（施術者4名）</h3>
                 </div>
               </section>
 
-              <section className="min-h-screen relative rounded-2xl overflow-hidden bg-black">
-                <div className="absolute inset-0">
+              <section className="min-h-screen relative rounded-2xl overflow-hidden bg-black flex flex-col">
+                <div className="h-[85vh] relative">
                   <Image
                     src="/Profit4.png"
                     alt="成功事例④（施術者4名）"
                     fill
                     sizes="100vw"
-                    className="object-contain cursor-pointer"
+                    className="object-cover cursor-pointer"
                     onClick={() => openModal('/Profit4.png', '成功事例④（施術者4名）')}
                   />
                 </div>
-                <div className="absolute bottom-8 left-0 right-0 text-center">
+                <div className="h-[15vh] flex items-center justify-center bg-gradient-to-t from-black/80 to-transparent">
                   <h3 className="text-white text-xl font-semibold">成功事例④（施術者4名）</h3>
                 </div>
               </section>
