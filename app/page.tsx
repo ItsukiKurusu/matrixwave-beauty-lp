@@ -357,7 +357,7 @@ export default function MatrixWavePage() {
                     fill
                     priority
                     sizes="100vw"
-                    className="object-contain md:object-cover cursor-pointer"
+                    className="object-contain cursor-pointer"
                     onClick={() => openModal('/Profit1.png', '成功事例①（1人治療院）')}
                   />
                 </div>
@@ -373,7 +373,7 @@ export default function MatrixWavePage() {
                     alt="成功事例②（1人治療院）"
                     fill
                     sizes="100vw"
-                    className="object-contain md:object-cover cursor-pointer"
+                    className="object-contain cursor-pointer"
                     onClick={() => openModal('/Profit2.png', '成功事例②（1人治療院）')}
                   />
                 </div>
@@ -389,7 +389,7 @@ export default function MatrixWavePage() {
                     alt="成功事例③（施術者4名）"
                     fill
                     sizes="100vw"
-                    className="object-contain md:object-cover cursor-pointer"
+                    className="object-contain cursor-pointer"
                     onClick={() => openModal('/Profit3.png', '成功事例③（施術者4名）')}
                   />
                 </div>
@@ -405,7 +405,7 @@ export default function MatrixWavePage() {
                     alt="成功事例④（施術者4名）"
                     fill
                     sizes="100vw"
-                    className="object-contain md:object-cover cursor-pointer"
+                    className="object-contain cursor-pointer"
                     onClick={() => openModal('/Profit4.png', '成功事例④（施術者4名）')}
                   />
                 </div>
